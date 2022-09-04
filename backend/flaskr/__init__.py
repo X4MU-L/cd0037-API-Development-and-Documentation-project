@@ -1,4 +1,4 @@
-
+import sys
 import os
 from flask import Flask, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
@@ -99,7 +99,7 @@ def create_app(test_config=None):
     """
     @app.route("/questions/<int:question_id>",methods=["DELETE"])
     def delete_question(question_id):
-        question_to_delete = Question.query.filter(Question.id==question_id).one_or_none()
+        question_to_delete = Question.query.filter(Question.id == question_id).one_or_none()
         if question_to_delete is None:
             abort(404)
         try:
@@ -193,6 +193,20 @@ def create_app(test_config=None):
     categories in the left column will cause only questions of that
     category to be shown.
     """
+    @app.route("/categories/<int:category_id>/questions")
+    def get_category(category_id):
+        print(category_id)
+        category = Category.query.filter(Category.id == category_id).one_or_none()
+        if category is None:
+            abort(404)
+        selection = Question.query.filter(Question.category == category.id).order_by(Question.id).all()
+        paginated = paginated_questions(request,selection)
+        return jsonify({
+                "success":True,
+                "questions":paginated,
+                "total_questions":len(selection),
+                "current_category": category.type
+            })
 
     """
     @TODO:
@@ -205,7 +219,33 @@ def create_app(test_config=None):
     one question at a time is displayed, the user is allowed to answer
     and shown whether they were correct or not.
     """
+    @app.route("/quizzes", methods=["POST"])
+    def get_trivia_quizzes():
+        try:
+            body = request.get_json()
+            if not body:
+                abort(400)
+            previous_questions = body["previous_questions"]
+            quiz_category = body["quiz_category"]
 
+            if quiz_category["id"] == 0:
+                questions = Question.query.filter(Question.id.notin_(previous_questions)).all()
+            else:
+                questions = Question.query.filter(Question.id.notin_(previous_questions),Question.category == quiz_category["id"])
+            question = None
+            if(questions):
+                question = random.choice(questions)
+                return jsonify({
+                    'success': True,
+                    'question': question.format()
+                })
+            return jsonify({
+                    'success': True,
+                    'question': question
+                })
+        except:
+            print(sys.exc_info())
+            abort(422)
     """
     @TODO:
     Create error handlers for all expected errors
