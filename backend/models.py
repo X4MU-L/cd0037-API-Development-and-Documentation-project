@@ -50,8 +50,9 @@ class Question(db.Model):
         db.session.commit()
 
     def reverse(self):
-        db.session.rollback()
         
+        db.session.rollback()
+
     def format(self):
         return {
             'id': self.id,
