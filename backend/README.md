@@ -161,8 +161,77 @@ Return Body:
      "category":
             { "1":"Science","2":"Art","3":"Geography","4":"History","5":"Entertainment","6":"Sports"
             },
-    "questions":
-            [{ "answer":"Agra", "category":3, "difficulty":2, "id":1, "question":"The Taj Mahal is located in which Indian city?" }, {"answer":"Apollo 13","category":5,"difficulty":4,"id":2,"question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"},{"answer":"Agra","category":3,"difficulty":2,"id":3,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":4,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Maya Angelou","category":4,"difficulty":2,"id":5,"question":"Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"},{"answer":"Agra","category":3,"difficulty":2,"id":6,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":7,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":8,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Muhammad Ali","category":4,"difficulty":1,"id":9,"question":"What boxer's original name is Cassius Clay?"},{"answer":"Brazil","category":6,"difficulty":3,"id":10,"question":"Which is the only team to play in every soccer World Cup tournament?"}],
+    "questions":[
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":1,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Apollo 13",
+              "category":5,
+              "difficulty":4,
+              "id":2,
+              "question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":3,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":4,"question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Maya Angelou",
+              "category":4,
+              "difficulty":2,
+              "id":5,
+              "question":"Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":6,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":7,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":8,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Muhammad Ali",
+              "category":4,
+              "difficulty":1,
+              "id":9,
+              "question":"What boxer's original name is Cassius Clay?"
+            },
+            {
+              "answer":"Brazil",
+              "category":6,
+              "difficulty":3,
+              "id":10,
+              "question":"Which is the only team to play in every soccer World Cup tournament?"
+            }
+          ],
     "success":true,
     "total_querstions":23,
     "current_category": null
@@ -211,9 +280,76 @@ Response Body:
   {
     "success":true,
     "created_id":24,
-    "created_question":"what is the most vesatile language","questions":[
+    "created_question":"what is the most vesatile language",
+    "questions":[
             {
-              "answer":"Agra", "category":3, "difficulty":2, "id":1, "question":"The Taj Mahal is located in which Indian city?" }, {"answer":"Apollo 13","category":5,"difficulty":4,"id":2,"question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"},{"answer":"Agra","category":3,"difficulty":2,"id":3,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":4,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Maya Angelou","category":4,"difficulty":2,"id":5,"question":"Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"},{"answer":"Agra","category":3,"difficulty":2,"id":6,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":7,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":8,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Muhammad Ali","category":4,"difficulty":1,"id":9,"question":"What boxer's original name is Cassius Clay?"},{"answer":"Brazil","category":6,"difficulty":3,"id":10,"question":"Which is the only team to play in every soccer World Cup tournament?"
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":1,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Apollo 13",
+              "category":5,
+              "difficulty":4,
+              "id":2,
+              "question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":3,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":4,"question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Maya Angelou",
+              "category":4,
+              "difficulty":2,
+              "id":5,
+              "question":"Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":6,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":7,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Agra",
+              "category":3,
+              "difficulty":2,
+              "id":8,
+              "question":"The Taj Mahal is located in which Indian city?"
+            },
+            {
+              "answer":"Muhammad Ali",
+              "category":4,
+              "difficulty":1,
+              "id":9,
+              "question":"What boxer's original name is Cassius Clay?"
+            },
+            {
+              "answer":"Brazil",
+              "category":6,
+              "difficulty":3,
+              "id":10,
+              "question":"Which is the only team to play in every soccer World Cup tournament?"
             }
           ],
     "total_questions":23
@@ -241,7 +377,10 @@ Response Body:
     "current_category":null,
     "questions":
           [{
-            "answer":"Apollo 13","category":5,"difficulty":4,"id":2,"question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
+            "answer":"Apollo 13",
+            "category":5,"difficulty":4,
+            "id":2,
+            "question":"What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
           }],
     "success":true,
     "total_questions":1
@@ -272,7 +411,32 @@ Return Body:
     "questions":
             [
               {
-                "answer":"Lake Victoria","category":3,"difficulty":2,"id":13,"question":"What is the largest lake in Africa?"},{"answer":"The Palace of Versailles","category":3,"difficulty":3,"id":14,"question":"In which royal palace would you find the Hall of Mirrors?"},{"answer":"Agra","category":3,"difficulty":2,"id":15,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":1,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":2,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":3,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":4,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":5,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":6,"question":"The Taj Mahal is located in which Indian city?"},{"answer":"Agra","category":3,"difficulty":2,"id":7,"question":"The Taj Mahal is located in which Indian city?"
+                "answer":"Lake Victoria",
+                "category":3,
+                "difficulty":2,
+                "id":13,
+                "question":"What is the largest lake in Africa?"
+              },
+              {
+                "answer":"The Palace of Versailles",
+                "category":3,
+                "difficulty":3,
+                "id":14,
+                "question":"In which royal palace would you find the Hall of Mirrors?"
+              },
+              {
+                "answer":"Agra",
+                "category":3,
+                "difficulty":2,
+                "id":15,
+                "question":"The Taj Mahal is located in which Indian city?"
+              },
+              {
+                "answer":"Agra",
+                "category":3,
+                "difficulty":2,
+                "id":1,
+                "question":"The Taj Mahal is located in which Indian city?"
               }
             ],
     "success":true,
@@ -306,7 +470,10 @@ Response Body:
   {
     "question":
               {
-                "answer":"Jackson Pollock","category":2,"difficulty":2,"id":19,"question":"Which American artist was a pioneer of Abstract Expressionism, and a leading exponent of action painting?"
+                "answer":"Jackson Pollock",
+                "category":2,"difficulty":2,
+                "id":19,
+                "question":"Which American artist was a pioneer of Abstract Expressionism, and a leading exponent of action painting?"
               },
     "success":true
   }
